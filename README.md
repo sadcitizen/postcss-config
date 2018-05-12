@@ -1,6 +1,8 @@
 # @sadcitizen/postcss-config
 
-Configuration for PostCSS
+[![Build Status](https://travis-ci.org/sadcitizen/postcss-config.svg?branch=master)](https://travis-ci.org/sadcitizen/postcss-config)
+
+> Configuration for PostCSS
 
 ## Install
 
