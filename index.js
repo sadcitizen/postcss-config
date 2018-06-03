@@ -4,7 +4,9 @@ module.exports = {
         // Plugin to inline @import rules content
         require('postcss-import'),
         // Plugin to transform W3C CSS Custom Properties for cascading variables
-        require('postcss-custom-properties'),
+        require('postcss-custom-properties')({
+            preserve: false
+        }),
         // Plugin to reduce calc()
         require('postcss-calc'),
         // Plugin to unwrap nested rules like how Sass does it
@@ -18,7 +20,9 @@ module.exports = {
         // Plugin to replace easing name from easings.net to cubic-bezier()
         require('postcss-easings'),
         // Add vendor prefixes to CSS rules using values from caniuse.com
-        require('autoprefixer')
+        require('autoprefixer')({
+            browsers: ['last 2 versions']
+        })
     ]
     /* eslint-enable global-require */
 };
