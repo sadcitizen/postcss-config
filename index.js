@@ -7,10 +7,16 @@ module.exports = {
         require('postcss-custom-properties')({
             preserve: false
         }),
+        // PostCSS plugin enabling custom property sets references
+        require('postcss-apply')({
+            preserve: false
+        }),
         // Plugin to reduce calc()
         require('postcss-calc'),
         // Plugin to unwrap nested rules like how Sass does it
         require('postcss-nested'),
+        // Plugin to use Custom Media Queries in CSS, following the CSS Media Queries specification.
+        require('postcss-custom-media'),
         // Plugin to transform W3C CSS Extensions (Custom Selectors) to more compatible CSS
         require('postcss-custom-selectors'),
         // Plugin to transform W3C CSS color function to more compatible CSS
